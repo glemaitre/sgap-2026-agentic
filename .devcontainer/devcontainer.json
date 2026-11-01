@@ -1,0 +1,30 @@
+{
+  "name": "SGAP 2026 Agentic",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "${workspaceFolder}/.pixi/envs/default/bin/python",
+        "python.envFile": "${workspaceFolder}/.env",
+        "python.terminal.useEnvFile": true,
+        "security.workspace.trust.enabled": false
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-vscode.live-server",
+        "jjjermiah.pixi-vscode"
+      ]
+    },
+    "codespaces": {
+      "openFiles": ["README.md"]
+    }
+  },
+  "mounts": [
+    "source=${localWorkspaceFolderBasename}-pixi,target=${containerWorkspaceFolder}/.pixi,type=volume"
+  ],
+  "postCreateCommand": "bash .devcontainer/prepare-pi.sh && sudo chown vscode .pixi && pixi install && pixi run skore skills install all --agent pi"
+}

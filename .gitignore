@@ -1,0 +1,21 @@
+*~
+*#
+__pycache__/
+*/__pycache__/
+*.py[cod]
+.Python
+.ipynb_checkpoints/
+.vscode
+.DS_Store
+
+# pixi environments
+.pixi
+
+# Local secrets
+.env
+
+# Installed agent skills and local agent state
+.agents/
+**/.pi/**
+!**/.pi/settings.json
+.skore/

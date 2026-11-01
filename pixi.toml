@@ -1,0 +1,19 @@
+[workspace]
+name = "sgap-2026-agentic"
+version = "0.1.0"
+description = "SGAP 2026 agentic machine learning session"
+authors = ["Guillaume Lemaitre <guillaume@probabl.ai>"]
+channels = ["conda-forge"]
+platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
+
+[dependencies]
+python = "==3.14.7"
+jupyterlab = ">=4.4.3,<5"
+ipykernel = "*"
+scikit-learn = "~=1.9.1"
+skrub = "~=0.11.0"
+skore = "~=0.29.0"
+pandas = "*"
+matplotlib = "*"
+numpy = "*"
+scipy = "*"
