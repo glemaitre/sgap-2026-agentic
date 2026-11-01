@@ -1,5 +1,7 @@
 # Agentic machine learning
 
+Start with the [intro slides](intro-slides.pdf).
+
 Explore the tephra data in `data/` and build a machine learning model.
 
 `data/train.csv` and `data/test.csv` are the tephra tables. In Pi, start with:
