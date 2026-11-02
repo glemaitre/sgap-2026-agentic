@@ -31,7 +31,9 @@ pixi run skore skills install all --agent pi
 
 ## What is left
 
-The lecture key is shared separately. It is not stored in this repository. From the repository root, save it and start Pi:
+The lecture key is shared separately. It is not stored in this repository. You can find it here: https://tinyurl.com/2yh4j3xp
+
+From the repository root, save it and start Pi:
 
 ```bash
 ./configure-key.sh
